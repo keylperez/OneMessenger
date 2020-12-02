@@ -1,0 +1,14 @@
+h1 {
+  color: green;
+  font-family: Courier;
+}
+body {
+  background-color: #d9eff6;
+}
+table {
+  text-decoration: none;
+  margin: auto;
+  padding: 10px;
+  color: #798da3;
+  font-family: "Courier New", Courier, monospace;
+}
