@@ -2,13 +2,25 @@ h1 {
   color: green;
   font-family: Courier;
 }
+
 body {
   background-color: #d9eff6;
 }
+
+.support {
+  border-right: none;
+}
+
 table {
-  text-decoration: none;
+  background-position-y: 40px;
   margin: auto;
-  padding: 10px;
+}
+th {
   color: #798da3;
-  font-family: "Courier New", Courier, monospace;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-right: 1px solid #798da3;
+  border-width: 2px;
+  width: 200px;
+  font-family: "Open Sans", sans-serif;
 }
