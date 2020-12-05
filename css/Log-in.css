@@ -1,0 +1,90 @@
+form {
+  color: #3b4754;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #d9eff6;
+}
+
+.support {
+  border-right: none;
+}
+
+#login {
+  margin-top: 2em;
+  margin-left: 5em;
+  width: 10em;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  border: 5px #798da3;
+  border-radius: 3em;
+  padding: 1em 2.5em;
+  background-color: white;
+  color: #798da3;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.logotb {
+  padding-left: 3em;
+  text-align: left;
+  border-right: none;
+}
+
+.signupbutton {
+  width: 10em;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  border: 2px #798da3;
+  border-radius: 3em;
+  padding: 1em 2.5em;
+  background-color: white;
+  color: #798da3;
+}
+
+.loginemail {
+  border-color: #798da3;
+  width: 20em;
+  padding-left: 5px;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  font-family: "Roboto", sans-serif;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.loginpass {
+  border-color: #798da3;
+  width: 20em;
+  padding-left: 5px;
+  border-radius: 2em;
+  font-family: "Roboto", sans-serif;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.loginform {
+  font-size: 30px;
+  margin-left: 5em;
+}
+
+.signup {
+  padding-right: 5em;
+  text-align: right;
+  border-right: none;
+}
+th {
+  color: #798da3;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  border-right: 1px solid #798da3;
+  border-width: 2px;
+  width: 200px;
+  letter-spacing: 0.1em;
+  font-family: "Roboto", sans-serif;
+}
