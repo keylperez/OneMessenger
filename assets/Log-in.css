@@ -206,8 +206,3 @@ th {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/*Disable when now value*/
-.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
