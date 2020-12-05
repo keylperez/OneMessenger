@@ -17,13 +17,15 @@
       <nav>
         <table>
           <thead class="nav_head">
-            <th class="logotb">
+            <th class="logo">
+              <a href="index.html">
               <img
                 src="images/logo.png"
                 alt="logo.png"
                 width="100"
                 class="logo"
               />
+            </a>
             </th>
             <th>
               <a
@@ -57,54 +59,60 @@
       </nav>
     </header>
     <hr>
-    <div>
-      <form class="loginform" action="">
-        <br /><br /><br />
-        <div>
-          <h1>One Messenger</h1>
-          <h3>All your messages in one!</h3>
-        </div>
-        <span class="inputform">
-          <span class="entypo-user inputUserIcon" style="font-size: 20px">
-            <i class="fa fa-user"></i>
+      <div class="start">
+      <div>
+        <form class="loginform" action="">
+          <br /><br /><br />
+          <div>
+            <h1>One Messenger</h1>
+            <h3>All your messages in one!</h3>
+          </div>
+          <span class="inputform">
+            <span class="entypo-user inputUserIcon" style="font-size: 20px">
+              <i class="fa fa-user"></i>
+            </span>
+            <input
+              type="email"
+              class="loginemail"
+              name="loginemail"
+              placeholder="Email"
+              autocomplete="true"
+              maxlength="999"
+              spellcheck="false"
+            /><br />
+            <span class="entypo-key inputPassIcon" style="font-size: large">
+              <i class="fa fa-key"></i>
+            </span>
+            <input
+              type="password"
+              class="loginpass"
+              autocomplete="true"
+              name="loginpass"
+              placeholder="Password"
+            /><br />
           </span>
-          <input
-            type="email"
-            class="loginemail"
-            name="loginemail"
-            placeholder="Email"
-            autocomplete="true"
-            maxlength="999"
-            spellcheck="false"
-          /><br />
-          <span class="entypo-key inputPassIcon" style="font-size: large">
-            <i class="fa fa-key"></i>
-          </span>
-          <input
-            type="password"
-            class="loginpass"
-            autocomplete="true"
-            name="loginpass"
-            placeholder="Password"
-          /><br />
-        </span>
-        <input type="submit" id="login" value="Log-in" /><br />
-      </form>
-    </div>
-    <div>
-      <img src="images/start.jpg" width="700" id="startpic" />
-    </div>
-    <div class="modal hidden">
-        <form action="tbh">
-            <label for="signupemail">Email: </i></label><br>
-            <input type="email" class="signupemail" placeholder="Email" autocomplete="false" maxlength="999" spellcheck="false"><br>
-            <label for="signuppass">Password: </label><br>
-            <input type="password" class="signuppass" placeholder="Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
-            <label for="signupconfirmpass">Confirm Password: </label><br>
-            <input type="password" class="signupconfirmpass" placeholder="Confirm Password" autocomplete="false" maxlength="999" spellcheck="false">
+          <input type="submit" id="login" value="Log-in" /><br />
         </form>
-    </div>
-    <div class="overlay hidden"></div>
+      </div>
+      <div>
+        <img src="images/start.jpg" width="700" id="startpic" />
+      </div>
+      <div class="modal hidden">
+          <form action="tbh">
+              <label for="signupemail">Email: </i></label><br>
+              <input type="email" class="signupemail" placeholder="Email" autocomplete="false" maxlength="999" spellcheck="false"><br>
+              <label for="signuppass">Password: </label><br>
+              <input type="password" class="signuppass" placeholder="Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
+              <label for="signupconfirmpass">Confirm Password: </label><br>
+              <input type="password" class="signupconfirmpass" placeholder="Confirm Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
+              <input type="submit" id="submitnewacc" value="Sign-up">
+          </form>
+      </div>
+      <div class="overlay hidden"></div>
+  </div>
+  <div class="setupacc hidden">
+
+  </div>
   </body>
   <footer></footer>
 </html>
