@@ -25,6 +25,16 @@ body {
   border-right: none;
 }
 
+h1 {
+  font-size: 100px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
 hr {
   background-color: #798da3;
 }
@@ -82,7 +92,7 @@ table {
 .loginemail {
   font-size: 15px;
   border-color: solid #798da3;
-  width: 20em;
+  width: 30em;
   padding-left: 5px;
   margin-bottom: 1em;
   border-radius: 0.5em;
@@ -94,7 +104,7 @@ table {
 .loginpass {
   font-size: 15px;
   border-color: solid #798da3;
-  width: 20em;
+  width: 30em;
   padding-left: 5px;
   margin-bottom: 1em;
   border-radius: 0.5em;
@@ -125,6 +135,7 @@ th {
 }
 
 #startpic {
+  border-radius: 15px;
   float: right;
   margin-top: 7em;
   margin-right: 7em;
@@ -181,7 +192,7 @@ th {
 }
 
 .signupconfirmpass {
-  color: white;
+  color: black;
   font-size: 15px;
   border-color: solid #798da3;
   width: 20em;
