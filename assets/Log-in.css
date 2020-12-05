@@ -41,8 +41,9 @@ hr {
 }
 
 #login {
+  float: right;
   margin-top: 2em;
-  margin-left: 5em;
+  margin-right: 20em;
   width: 10em;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -204,4 +205,9 @@ th {
   font-family: "Roboto", sans-serif;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+/*Disable when now value*/
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

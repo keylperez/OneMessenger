@@ -32,8 +32,7 @@ hr {
 }
 
 .logoutbt {
-  border
-  width: 10em;
+  border-width: 10em;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   border: 2px solid #798da39a;
