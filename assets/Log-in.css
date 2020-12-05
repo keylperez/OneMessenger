@@ -12,6 +12,7 @@
   z-index: 1000;
   transition: all 0.3s;
 }
+
 form {
   color: #3b4754;
   font-family: "Roboto", sans-serif;
@@ -60,6 +61,7 @@ hr {
 }
 
 table {
+  color: #798da3;
   width: 100%;
   text-align: center;
   margin: auto;
