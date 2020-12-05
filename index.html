@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Help me bro-->
-        <title>One Messenger - Log-in</title>
-        <link rel="stylesheet" type ="text/css" href="css/Log-in.css"/>
-    </head>
-    <header>
-        <nav>
-            <table>
-                <thead>
-                    <th class = "logotb"><img src="images/logo.png" alt="logo.png" width="100" class="logo"></th>
-                    <th><a href="sign-up.html" style="text-decoration: none;">Message API's</a></th>
-                    <th><a href="settings.html" style="text-decoration: none;">Settings</a></th>
-                    <th><a href="support.html" style="text-decoration: none;">Support</a></th>
-                    <th class="signup"><a href="sign-up.html" class="signupbutton">Sign-up</a></th>
-                </thead>
-            </table>
-        </nav>
-    </header>
-    <hr>
+  <head>
+    <!--Help me bro-->
+    <title>One Messenger - Log-in</title>
+    <link rel="stylesheet" type="text/css" href="css/Log-in.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <header>
+    <nav>
+      <table>
+        <thead>
+          <th class="logotb">
+            <img
+              src="images/logo.png"
+              alt="logo.png"
+              width="100"
+              class="logo"
+            />
+          </th>
+          <th>
+            <a href="sign-up.html" style="text-decoration: none"
+              >Message API's</a
+            >
+          </th>
+          <th>
+            <a href="settings.html" style="text-decoration: none">Settings</a>
+          </th>
+          <th>
+            <a href="support.html" style="text-decoration: none">Support</a>
+          </th>
+          <th class="signup">
+            <a href="sign-up.html" class="signupbutton">Sign-up</a>
+          </th>
+        </thead>
+      </table>
+    </nav>
+  </header>
+  <hr />
 
-    <body>
+  <body>
+    <div>
+      <form class="loginform" action="">
+        <br /><br /><br />
         <div>
-            <form class="loginform" action=""><br><br><br>
-                <div>
-                    <h1>One Messenger</h1>
-                    <h3>All your messages in one!</h3>
-                </div>
-                <span class="inputform">
-                    <input type="text" class="loginemail" name="loginemail" placeholder="Email" autocomplete="true" maxlength="999" spellcheck="false"><br>
-                    <input type="text" class="loginpass" name="loginpass" placeholder="Password"><br>
-                </span>
-                <input type="submit" id="login" value="Log-in"><br>
-            </form>
+          <h1>One Messenger</h1>
+          <h3>All your messages in one!</h3>
         </div>
-        <div>
-            <img src="images/start.jpg" width="700" id="startpic">
-        </div>
-        
-    </body>
-    <footer></footer>
+        <span class="inputform">
+          <input
+            type="text"
+            class="loginemail"
+            name="loginemail"
+            placeholder="Email"
+            autocomplete="true"
+            maxlength="999"
+            spellcheck="false"
+          /><br />
+          <input
+            type="text"
+            class="loginpass"
+            name="loginpass"
+            placeholder="Password"
+          /><br />
+        </span>
+        <input type="submit" id="login" value="Log-in" /><br />
+      </form>
+    </div>
+    <div>
+      <img src="images/start.jpg" width="700" id="startpic" />
+    </div>
+  </body>
+  <footer></footer>
 </html>
