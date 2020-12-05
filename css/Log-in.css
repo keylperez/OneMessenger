@@ -76,6 +76,7 @@ table {
 }
 
 .loginform {
+  margin-left: 7em;
   float: left;
 }
 
@@ -97,6 +98,8 @@ th {
 
 #startpic {
   float: right;
+  margin-top: 7em;
+  margin-right: 7em;
 }
 
 .thepic {
