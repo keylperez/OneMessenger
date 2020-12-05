@@ -24,11 +24,23 @@ const buttonSignup = document.querySelector(".signupbutton");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const navHead = document.querySelector(".nav_head");
+
 const loginEmail = document.querySelector(".loginemail");
 const loginPass = document.querySelector(".loginpass");
 const loginButton = document.querySelector("#login");
 
+const signUpButtton = document.querySelector("#submitnewacc");
+const signUpEmail = document.querySelector(".signupemail");
+const signUpPass = document.querySelector(".signuppass");
+const signUpConfirm = document.querySelector(".signupconfirmpass");
+
 //Functions
+
+const validateEmail = function (email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
 const removeHidden = function () {
   overlay.classList.remove("hidden");
   modal.classList.remove("hidden");
@@ -73,5 +85,27 @@ loginButton.addEventListener("click", function (e) {
 
   if (accntLog && accntLog.password === loginPass.value) {
     console.log("login");
+  }
+});
+
+signUpButtton.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (
+    signUpEmail.value !== "" &&
+    signUpPass.value !== "" &&
+    signUpConfirm.value !== ""
+  ) {
+    if (validateEmail(signUpEmail.value)) {
+      if (signUpPass.value === signUpConfirm.value) {
+        accounts.push(new Account(signUpEmail.value, signUpPass.value));
+        console.log("Success");
+      } else {
+        console.log("pass does not match confirm");
+      }
+    } else {
+      console.log("That is not an email!");
+    }
+  } else {
+    console.log("Missing fields");
   }
 });
