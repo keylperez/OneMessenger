@@ -1,21 +1,26 @@
 "use strict";
-
+//Selected Elements
 const buttonSignup = document.querySelector(".signupbutton");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 
-buttonSignup.addEventListener("click", function (e) {
-  e.preventDefault();
+//Functions
+const removeHidden = function () {
   overlay.classList.remove("hidden");
   modal.classList.remove("hidden");
-});
+};
+
+const addHidden = function () {
+  overlay.classList.add("hidden");
+  modal.classList.add("hidden");
+};
+
+//Event Listeners
+buttonSignup.addEventListener("click", removeHidden);
+overlay.addEventListener("click", addHidden);
+
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
-    overlay.classList.add("hidden");
-    modal.classList.add("hidden");
+    addHidden();
   }
-});
-overlay.addEventListener("click", function () {
-  overlay.classList.remove("hidden");
-  modal.classList.remove("hidden");
 });
