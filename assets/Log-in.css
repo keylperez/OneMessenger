@@ -152,3 +152,38 @@ th {
   visibility: hidden;
   opacity: 0;
 }
+
+.signupemail {
+  font-size: 15px;
+  border-color: solid #798da3;
+  width: 20em;
+  padding-left: 5px;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  font-family: "Roboto", sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.signuppass {
+  font-size: 15px;
+  border-color: solid #798da3;
+  width: 20em;
+  padding-left: 5px;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  font-family: "Roboto", sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.signupconfirmpass {
+  font-size: 15px;
+  border-color: solid #798da3;
+  width: 20em;
+  padding-left: 5px;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  font-family: "Roboto", sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
