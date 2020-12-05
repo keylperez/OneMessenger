@@ -11,6 +11,10 @@ body {
   border-right: none;
 }
 
+hr {
+  background-color: #798da3;
+}
+
 #login {
   margin-top: 2em;
   margin-left: 5em;
@@ -48,29 +52,31 @@ table {
 }
 
 .loginemail {
+  font-size: 15px;
   border-color: #798da3;
   width: 20em;
   padding-left: 5px;
   margin-bottom: 1em;
-  border-radius: 2em;
+  border-radius: 0.5em;
   font-family: "Roboto", sans-serif;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .loginpass {
+  font-size: 15px;
   border-color: #798da3;
   width: 20em;
   padding-left: 5px;
-  border-radius: 2em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
   font-family: "Roboto", sans-serif;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .loginform {
-  font-size: 30px;
-  margin-left: 5em;
+  float: left;
 }
 
 .signup {
@@ -87,4 +93,12 @@ th {
   width: 200px;
   letter-spacing: 0.1em;
   font-family: "Roboto", sans-serif;
+}
+
+#startpic {
+  float: right;
+}
+
+.thepic {
+  vertical-align: auto;
 }
