@@ -19,7 +19,7 @@ const accounts = [account1, account2];
 // const accntLog = accounts.find((accnt) => accnt.email === "sample@gmail.com");
 // console.log(accntLog);
 
-//Selected Elements,
+//Selected Elements, Declared Variables
 const buttonSignup = document.querySelector(".signupbutton");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
@@ -33,6 +33,8 @@ const signUpButtton = document.querySelector("#submitnewacc");
 const signUpEmail = document.querySelector(".signupemail");
 const signUpPass = document.querySelector(".signuppass");
 const signUpConfirm = document.querySelector(".signupconfirmpass");
+
+let messageOutput;
 
 //Functions
 
@@ -66,6 +68,47 @@ const hoverNav = function (e) {
   }
 };
 
+const displayMessage = function (message) {
+  const errorSucc = message === "Success" ? "signUpSuccess" : "signUpError";
+  if (messageOutput) messageOutput.remove();
+  messageOutput = document.createElement("div");
+  messageOutput.classList.add(errorSucc);
+  messageOutput.append(message);
+  signUpButtton.before(messageOutput);
+};
+
+const checkUserCredentials = function (e) {
+  e.preventDefault();
+  let message;
+
+  if (
+    signUpEmail.value !== "" &&
+    signUpPass.value !== "" &&
+    signUpConfirm.value !== ""
+  ) {
+    if (validateEmail(signUpEmail.value)) {
+      const accountExist = accounts.find(
+        (accnt) => accnt.email === signUpEmail.value
+      );
+      if (!accountExist) {
+        if (signUpPass.value === signUpConfirm.value) {
+          accounts.push(new Account(signUpEmail.value, signUpPass.value));
+          message = "Success";
+        } else {
+          message = "pass does not match confirm";
+        }
+      } else {
+        message = "User already exists!";
+      }
+    } else {
+      message = "That is not an email!";
+    }
+  } else {
+    message = "Missing fields";
+  }
+  displayMessage(message);
+};
+
 //Event Listeners
 buttonSignup.addEventListener("click", removeHidden);
 overlay.addEventListener("click", addHidden);
@@ -88,32 +131,4 @@ loginButton.addEventListener("click", function (e) {
   }
 });
 
-signUpButtton.addEventListener("click", function (e) {
-  e.preventDefault();
-  let message;
-  if (
-    signUpEmail.value !== "" &&
-    signUpPass.value !== "" &&
-    signUpConfirm.value !== ""
-  ) {
-    if (validateEmail(signUpEmail.value)) {
-      if (signUpPass.value === signUpConfirm.value) {
-        accounts.push(new Account(signUpEmail.value, signUpPass.value));
-        message = "Success";
-      } else {
-        message = "pass does not match confirm";
-      }
-    } else {
-      message = "That is not an email!";
-    }
-  } else {
-    message = "Missing fields";
-  }
-
-  const errorSucc = message === "Success" ? "signUpSuccess" : "signUpError";
-  const messageOutput = document.createElement("div");
-  messageOutput.classList.add(errorSucc);
-  messageOutput.append(message);
-});
-
-//<div class="signUpError">Missing Fields</div>
+signUpButtton.addEventListener("click", checkUserCredentials);
