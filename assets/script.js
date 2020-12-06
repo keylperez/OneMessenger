@@ -90,6 +90,7 @@ loginButton.addEventListener("click", function (e) {
 
 signUpButtton.addEventListener("click", function (e) {
   e.preventDefault();
+  let message;
   if (
     signUpEmail.value !== "" &&
     signUpPass.value !== "" &&
@@ -98,14 +99,21 @@ signUpButtton.addEventListener("click", function (e) {
     if (validateEmail(signUpEmail.value)) {
       if (signUpPass.value === signUpConfirm.value) {
         accounts.push(new Account(signUpEmail.value, signUpPass.value));
-        console.log("Success");
+        message = "Success";
       } else {
-        console.log("pass does not match confirm");
+        message = "pass does not match confirm";
       }
     } else {
-      console.log("That is not an email!");
+      message = "That is not an email!";
     }
   } else {
-    console.log("Missing fields");
+    message = "Missing fields";
   }
+
+  const errorSucc = message === "Success" ? "signUpSuccess" : "signUpError";
+  const messageOutput = document.createElement("div");
+  messageOutput.classList.add(errorSucc);
+  messageOutput.append(message);
 });
+
+//<div class="signUpError">Missing Fields</div>
