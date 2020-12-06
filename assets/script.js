@@ -97,7 +97,7 @@ const checkUserCredentials = function (e) {
           signUpConfirm.blur();
           message = "Success";
         } else {
-          message = "pass does not match confirm";
+          message = "Passwords do not match";
         }
       } else {
         message = "User already exists!";
