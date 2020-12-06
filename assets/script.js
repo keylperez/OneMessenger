@@ -93,6 +93,8 @@ const checkUserCredentials = function (e) {
       if (!accountExist) {
         if (signUpPass.value === signUpConfirm.value) {
           accounts.push(new Account(signUpEmail.value, signUpPass.value));
+          signUpEmail.value = signUpPass.value = signUpConfirm.value = "";
+          signUpConfirm.blur();
           message = "Success";
         } else {
           message = "pass does not match confirm";
@@ -127,6 +129,8 @@ loginButton.addEventListener("click", function (e) {
   const accntLog = accounts.find((accnt) => accnt.email === loginEmail.value);
 
   if (accntLog && accntLog.password === loginPass.value) {
+    loginEmail.value = loginPass.value = "";
+    loginPass.blur();
     console.log("login");
   }
 });
