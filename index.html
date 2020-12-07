@@ -3,10 +3,7 @@
   <head>
     <!--Help me bro-->
     <title>One Messenger - Log-in</title>
-    <script
-    src="https://kit.fontawesome.com/e517a51043.js"
-    crossorigin="anonymous"
-  ></script>
+    <script src="https://kit.fontawesome.com/e517a51043.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/Index.css" />
     <script defer src="assets/script.js"></script>
   </head>
@@ -16,20 +13,20 @@
       <nav>
         <table>
           <thead class="nav_head">
-            <th class="logo">
-              <a href="index.html"><img src="images/logo.png" alt="logo.png" width="100" class="logo"/></a>
+            <th>
+              <a href="index.html"><img src="images/logo.png" alt="logo.png" width="100" id="logo"/></a>
             </th>
             <th>
-              <a href="aboutus.html" class="nav_headings" style="text-decoration: none">About Us</a>
+              <a href="aboutus.html" id="aboutUs" class="nav_headings" style="text-decoration: none">About Us</a>
             </th>
             <th>
-              <a href="settings.html" class="nav_headings" style="text-decoration: none">Settings</a>
+              <a href="settings.html" id="settings" class="nav_headings" style="text-decoration: none">Settings</a>
             </th>
             <th>
-              <a href="support.html" class="nav_headings" style="text-decoration: none">Support</a>
+              <a href="support.html" id="support" class="nav_headings" style="text-decoration: none">Support</a>
             </th>
-            <th class="signup">
-              <button class="signupbutton nav_headings">Sign-up</button>
+            <th>
+              <button id="signupbutton" class="nav_headings">Sign-up</button>
             </th>
           </thead>
         </table>
@@ -38,7 +35,7 @@
     <hr>
       <div>
         <form class="loginform" action="">
-          <br /><br /><br />
+          <br/><br/><br/>
           <div class="headers">
             <h1>One Messenger</h1>
             <h3>All your messages in one!</h3>
@@ -47,11 +44,11 @@
             <span class="entypo-user inputUserIcon" style="font-size: 20px">
               <i class="fa fa-user"></i>
             </span>
-            <input type="email" class="loginemail" name="loginemail" placeholder="Email" autocomplete="true" maxlength="999" spellcheck="false"/><br>
+            <input type="email" id="loginemail" class="inputbox" name="loginemail" placeholder="Email" autocomplete="true" maxlength="999" spellcheck="false"/><br>
             <span class="entypo-key inputPassIcon" style="font-size: large">
               <i class="fa fa-key"></i>
             </span>
-            <input type="password" class="loginpass" autocomplete="true" name="loginpass" placeholder="Password"/><br>
+            <input type="password" id="loginpass" class="inputbox" autocomplete="true" name="loginpass" placeholder="Password"/><br>
           </span>
           <input type="submit" id="login" value="Log-in" /><br />
         </form>
@@ -62,22 +59,22 @@
       <div class="modal hidden">
           <form action="tbh">
               <label for="signupemail">Email: </i></label><br>
-              <input type="email" class="signupemail" placeholder="Email" autocomplete="false" maxlength="999" spellcheck="false"><br>
+              <input type="email" id="signupemail" class="inputbox" placeholder="Email" autocomplete="false" maxlength="999" spellcheck="false"><br>
               <label for="signuppass">Password: </label><br>
-              <input type="password" class="signuppass" placeholder="Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
+              <input type="password" id="signuppass" class="inputbox" placeholder="Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
               <label for="signupconfirmpass">Confirm Password: </label><br>
-              <input type="password" class="signupconfirmpass" placeholder="Confirm Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
+              <input type="password" id="signupconfirmpass" class="inputbox" placeholder="Confirm Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
               <input type="submit" id="submitnewacc" value="Sign-up">
           </form>
       </div>
-      <div class="overlay hidden"></div>
+    <div class="overlay hidden"></div>
   </div>
-  <div class="setupacc hidden">
+  <div id="setupacc" class="hidden">
       <nav>
         <table>
           <thead class="nav_head">
-            <th class="logo">
-              <a href="index.html"><img src="images/logo.png" alt="logo.png" width="100" class="logo"/></a>
+            <th>
+              <a href="index.html"><img src="images/logo.png" alt="logo.png" width="100" id="logo"/></a>
             </th>
             <th>
               <a href="aboutus.html" class="nav_headings" style="text-decoration: none">About Us</a>
@@ -88,8 +85,8 @@
             <th>
               <a href="support.html" class="nav_headings" style="text-decoration: none">Support</a>
             </th>
-            <th class="signup">
-              <button class="signupbutton nav_headings">Sign-up</button>
+            <th>
+              <button id="logout" class="nav_headings">Log-out</button>
             </th>
           </thead>
         </table>
@@ -98,5 +95,4 @@
     <br>
   </div>
   </body>
-  <footer></footer>
 </html>

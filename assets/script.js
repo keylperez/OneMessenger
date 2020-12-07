@@ -20,7 +20,7 @@ const accounts = [account1, account2];
 // console.log(accntLog);
 
 //Selected Elements, Declared Variables
-const buttonSignup = document.querySelector(".signupbutton");
+const buttonSignup = document.querySelector("#signupbutton");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const navHead = document.querySelector(".nav_head");
@@ -28,12 +28,12 @@ const setupacc = document.querySelector(".setupacc");
 const start = document.querySelector(".start");
 const login = document.querySelector("#login");
 
-const loginEmail = document.querySelector(".loginemail");
-const loginPass = document.querySelector(".loginpass");
+const loginEmail = document.querySelector("#loginemail");
+const loginPass = document.querySelector("#loginpass");
 const loginButton = document.querySelector("#login");
 
 const signUpButtton = document.querySelector("#submitnewacc");
-const signUpEmail = document.querySelector(".signupemail");
+const signUpEmail = document.querySelector("#signupemail");
 const signUpPass = document.querySelector(".signuppass");
 const signUpConfirm = document.querySelector(".signupconfirmpass");
 
@@ -143,8 +143,6 @@ loginButton.addEventListener("click", function (e) {
     loginEmail.value = loginPass.value = "";
     loginPass.blur();
     console.log("login");
-    login.addEventListener("click", addHiddenSA);
-    login.addEventListener("click", removeHiddenSA);
   }
 });
 
