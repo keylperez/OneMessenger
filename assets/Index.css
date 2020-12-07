@@ -38,6 +38,12 @@ form {
   font-family: "Roboto", sans-serif;
 }
 
+.nav_headings {
+  text-decoration: none;
+  color: #3b4754;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #d9eff6;
