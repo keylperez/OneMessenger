@@ -24,6 +24,9 @@ const buttonSignup = document.querySelector(".signupbutton");
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const navHead = document.querySelector(".nav_head");
+const setupacc = document.querySelector(".setupacc");
+const start = document.querySelector(".start");
+const login = document.querySelector("#login");
 
 const loginEmail = document.querySelector(".loginemail");
 const loginPass = document.querySelector(".loginpass");
@@ -43,14 +46,22 @@ const validateEmail = function (email) {
   return re.test(String(email).toLowerCase());
 };
 
-const removeHidden = function () {
+const removeHiddenSU = function () {
   overlay.classList.remove("hidden");
   modal.classList.remove("hidden");
 };
 
-const addHidden = function () {
+const addHiddenSU = function () {
   overlay.classList.add("hidden");
   modal.classList.add("hidden");
+};
+
+const addHiddenSA = function () {
+  start.classList.add("hidden");
+};
+
+const removeHiddenSA = function () {
+  setupacc.classList.remove("hidden");
 };
 
 const hoverNav = function (e) {
@@ -112,12 +123,12 @@ const checkUserCredentials = function (e) {
 };
 
 //Event Listeners
-buttonSignup.addEventListener("click", removeHidden);
-overlay.addEventListener("click", addHidden);
+buttonSignup.addEventListener("click", removeHiddenSU);
+overlay.addEventListener("click", addHiddenSU);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
-    addHidden();
+    addHiddenSU();
   }
 });
 
@@ -132,6 +143,8 @@ loginButton.addEventListener("click", function (e) {
     loginEmail.value = loginPass.value = "";
     loginPass.blur();
     console.log("login");
+    login.addEventListener("click", addHiddenSA);
+    login.addEventListener("click", removeHiddenSA);
   }
 });
 
