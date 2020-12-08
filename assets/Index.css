@@ -26,11 +26,17 @@
 }
 
 #accBox {
+  border-radius: 15px;
   overflow: auto;
-  height: 45em;
+  height: 38em;
   width: 100%;
-  border: 2px solid gray;
+  border: 5px solid gray;
   background-color: rgba(75, 186, 238, 0.5);
+}
+
+#accSubmit {
+  float: right;
+  margin: 2em 0em 0em 0em;
 }
 
 .smLogo {
@@ -51,12 +57,6 @@
   border: 2px solid white;
 }
 
-.nav_headings {
-  text-decoration: none;
-  color: #3b4754;
-  font-family: "Roboto", sans-serif;
-}
-
 .modal {
   font-family: "Roboto", sans-serif;
   border-radius: 15px;
@@ -72,20 +72,6 @@
   transition: all 0.3s;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #d9eff6;
-  color: #3b4754;
-}
-
-.headers {
-  float: left;
-  padding-left: 0px;
-  margin-left: 1.5em;
-  width: fit-content;
-  height: auto;
-}
-
 h1 {
   font-size: 100px;
   margin-bottom: 5px;
@@ -96,98 +82,12 @@ h3 {
   font-size: 50px;
 }
 
-hr {
-  border: 1px solid #798da3;
-}
-
-table {
-  color: #798da3;
-  text-decoration: none;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-.navButton {
-  border-right: none;
-  width: 25%;
-}
-
-.logo {
-  width: 100px;
-  float: left;
-  padding-left: 3em;
-  border-right: none;
-}
-
 #login {
   float: right;
 }
 
-.bt {
-  width: 13em;
-  height: 5em;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  border: 2px solid #798da39a;
-  border-radius: 3em;
-  padding: 1em 2.5em;
-  background-color: white;
-  color: #798da3;
-  transition: 0.2s;
-  text-align: center;
-}
-
-.bt:hover {
-  background-color: #798da39a;
-  border: 2px solid white;
-  color: white;
-}
-
-.inputbox {
-  font-size: 15px;
-  border: 2px solid #798da3;
-  width: 30em;
-  padding-left: 5px;
-  margin-bottom: 1em;
-  border-radius: 0.5em;
-  font-family: "Roboto", sans-serif;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
 #loginform {
   float: left;
-}
-
-#notifBell {
-  left: 82%;
-}
-
-.btTop {
-  color: #3b4754;
-  position: absolute;
-  left: 85%;
-  top: 30px;
-  font-size: 40px;
-}
-
-.fa {
-  color: #3b4754;
-}
-
-.navBt {
-  float: right;
-  margin-right: 3em;
-  vertical-align: middle;
-}
-
-th {
-  color: #798da3;
-  border-right: 2px solid #798da3;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .overlay {
@@ -218,4 +118,79 @@ th {
 
 .topnav {
   overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  display: inline-table;
+  position: relative;
+  padding-left: 0px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  margin-left: 4em;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(59, 71, 84);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.linkset {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #798da3;
 }
