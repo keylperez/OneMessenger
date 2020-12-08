@@ -48,7 +48,7 @@ const validateEmail = function (email) {
 
 const removeHiddenSU = function () {
   overlay.classList.remove("hidden");
-  modal.classList.remove("hidden");
+modal.classList.remove("hidden");
 };
 
 const addHiddenSU = function () {
