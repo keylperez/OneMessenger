@@ -25,6 +25,26 @@
   margin-right: 7em;
 }
 
+#accBox {
+  overflow: auto;
+  height: 45em;
+  width: 100%;
+  border: 2px solid gray;
+  background-color: rgba(75, 186, 238, 0.5);
+}
+
+.smLogo {
+  border-radius: 12px;
+  margin: 1em 1em 0em 1em;
+  width: 300px;
+  height: 300px;
+}
+
+.smCBxLabel {
+  color: rgb(15, 71, 139);
+  font-size: 30px;
+}
+
 #submitnewacc:hover {
   background-color: #798da39a;
   color: white;
@@ -140,8 +160,16 @@ table {
   float: left;
 }
 
-.userProfile {
-  displa
+#notifBell {
+  left: 82%;
+}
+
+.btTop {
+  color: #3b4754;
+  position: absolute;
+  left: 85%;
+  top: 30px;
+  font-size: 40px;
 }
 
 .fa {
@@ -157,6 +185,9 @@ table {
 th {
   color: #798da3;
   border-right: 2px solid #798da3;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .overlay {
