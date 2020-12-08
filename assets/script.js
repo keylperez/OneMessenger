@@ -34,8 +34,8 @@ const loginButton = document.querySelector("#login");
 
 const signUpButtton = document.querySelector("#submitnewacc");
 const signUpEmail = document.querySelector("#signupemail");
-const signUpPass = document.querySelector(".signuppass");
-const signUpConfirm = document.querySelector(".signupconfirmpass");
+const signUpPass = document.querySelector("#signuppass");
+const signUpConfirm = document.querySelector("#signupconfirmpass");
 
 let messageOutput;
 

@@ -8,87 +8,90 @@
     <script defer src="assets/script.js"></script>
   </head>
   <body>
-    <div id="setupacc" class="hidden">
+    <div id="setupacc" style="width: 100%;">
       <nav>
         <table>
           <thead class="nav_head">
             <th>
-              <a href="index.html"><img src="images/logo.png" alt="logo.png" width="100" id="logo"/></a>
+              <a href="index.html"><img src="images/logo.png" alt="logo.png" class="logo"/></a>
             </th>
             <th>
-              <a href="aboutus.html" class="nav_headings" style="text-decoration: none">About Us</a>
+              <a href="aboutus.html" class="nav_headings" id="aboutUs" style="text-decoration: none">About Us</a>
             </th>
             <th>
-              <a href="settings.html" class="nav_headings" style="text-decoration: none">Settings</a>
+              <a href="settings.html" class="nav_headings" id="settings" style="text-decoration: none">Settings</a>
             </th>
             <th>
-              <a href="support.html" class="nav_headings" style="text-decoration: none">Support</a>
+              <a href="support.html" class="nav_headings" id="support" style="text-decoration: none">Support</a>
             </th>
-            <th>
-              <button id="logout" class="bt nav_headings">Log-out</button>
+            <th class="navButton">
+              <span class="entypo-user inputUserIcon userProfile" style="font-size: 40px">
+                <i class="fa fa-user"></i></span>
+              <button id="logout" class="bt nav_headings navBt">Log-out</button>
             </th>
           </thead>
         </table>
       </nav>
-  </div>
-    <div>
+      <hr>
+    </div>
+    <div id="start" class="hidden">
       <header>
         <nav>
           <table>
             <thead class="nav_head">
               <th>
-                <a href="index.html"><img src="images/logo.png" alt="logo.png" width="100" id="logo"/></a>
+                <a href="index.html"><img src="images/logo.png" alt="logo.png" class="logo"/></a>
               </th>
               <th>
-                <a href="aboutus.html" id="aboutUs" class="nav_headings" style="text-decoration: none">About Us</a>
+                <a href="aboutus.html" class="nav_headings" id="aboutUs" style="text-decoration: none">About Us</a>
               </th>
               <th>
-                <a href="settings.html" id="settings" class="nav_headings" style="text-decoration: none">Settings</a>
+                <a href="settings.html" class="nav_headings" id="settings" style="text-decoration: none">Settings</a>
               </th>
               <th>
-                <a href="support.html" id="support" class="nav_headings" style="text-decoration: none">Support</a>
+                <a href="support.html" class="nav_headings" id="support" style="text-decoration: none">Support</a>
               </th>
-              <th style="border-right: none; width: 25%;">
-                <button id="signupbutton" class="bt nav_headings">Sign-up</button>
+              <th class="navButton">
+                <button id="signupbutton" class="bt nav_headings navBt">Sign-up</button>
               </th>
             </thead>
           </table>
         </nav>
       </header>
-    </div>
     <hr>
-      <br/><br/><br/> 
+      <br/><br/><br/>
       <div style="margin-left: 112px;">
         <div class="headers">
           <h1>One Messenger</h1>
-          <h3>All your messages in one!</h3>
+          <h3>All your messages in one!</h3><br>
         </div>
-        <img src="images/start.jpg" width="700" id="startpic" />
+        <img src="images/start.jpg" id="startpic" />
         <div>
-          <form class="loginform" action="">
+          <form id="loginform" action="">
               <span class="entypo-user inputUserIcon" style="font-size: 20px">
-                <i class="fa fa-user"></i>
+                <i class="fa fa-userL"></i>
+                <input type="email" id="loginemail" class="inputbox" name="loginemail" placeholder="Email" autocomplete="true" maxlength="999" spellcheck="false"/><br>
               </span>
-              <input type="email" id="loginemail" class="inputbox" name="loginemail" placeholder="Email" autocomplete="true" maxlength="999" spellcheck="false"/><br>
               <span class="entypo-key inputPassIcon" style="font-size: large">
-                <i class="fa fa-key"></i>
+                <i class="fa fa-keyL"></i>
+                <input type="password" id="loginpass" class="inputbox" autocomplete="true" name="loginpass" placeholder="Password"/><br>
               </span>
-              <input type="password" id="loginpass" class="inputbox" autocomplete="true" name="loginpass" placeholder="Password"/><br>
             <input type="submit" id="login" class="bt" value="Log-in"/>
           </form>
         </div>
       </div>
-      <div class="modal hidden">
-          <form action="tbh">
-              <label for="signupemail">Email: </i></label><br>
-              <input type="email" id="signupemail" class="inputbox" placeholder="Email" autocomplete="false" maxlength="999" spellcheck="false"><br>
-              <label for="signuppass">Password: </label><br>
-              <input type="password" id="signuppass" class="inputbox" placeholder="Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
-              <label for="signupconfirmpass">Confirm Password: </label><br>
-              <input type="password" id="signupconfirmpass" class="inputbox" placeholder="Confirm Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
-              <input type="submit" id="submitnewacc" class="bt" value="Sign-up">
-          </form>
-      </div>
+    </div>
+    <div class="modal hidden">
+        <form action="tbh">
+            <label for="signupemail">Email: </i></label><br>
+            <input type="email" id="signupemail" class="inputbox" placeholder="Email" autocomplete="false" maxlength="999" spellcheck="false"><br>
+            <label for="signuppass">Password: </label><br>
+            <input type="password" id="signuppass" class="inputbox" placeholder="Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
+            <label for="signupconfirmpass">Confirm Password: </label><br>
+            <input type="password" id="signupconfirmpass" class="inputbox" placeholder="Confirm Password" autocomplete="false" maxlength="999" spellcheck="false"><br>
+            <input type="submit" id="submitnewacc" class="bt" value="Sign-up">
+        </form>
+    </div>
     <div class="overlay hidden"></div>
   </body>
 </html>

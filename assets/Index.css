@@ -17,6 +17,9 @@
 }
 
 #startpic {
+  width: 40%;
+  height: auto;
+  margin-top: 5%;
   border-radius: 15px;
   float: right;
   margin-right: 7em;
@@ -26,6 +29,12 @@
   background-color: #798da39a;
   color: white;
   border: 2px solid white;
+}
+
+.nav_headings {
+  text-decoration: none;
+  color: #3b4754;
+  font-family: "Roboto", sans-serif;
 }
 
 .modal {
@@ -43,30 +52,18 @@
   transition: all 0.3s;
 }
 
-form {
-  color: #3b4754;
-  font-family: "Roboto", sans-serif;
-}
-
-.nav_headings {
-  text-decoration: none;
-  color: #3b4754;
-  font-family: "Roboto", sans-serif;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #d9eff6;
   color: #3b4754;
 }
 
-.support {
-  border-right: none;
-}
-
 .headers {
+  float: left;
   padding-left: 0px;
   margin-left: 1.5em;
+  width: fit-content;
+  height: auto;
 }
 
 h1 {
@@ -91,9 +88,15 @@ table {
   margin: auto;
 }
 
-#logo {
-  margin-left: 2em;
-  text-align: left;
+.navButton {
+  border-right: none;
+  width: 25%;
+}
+
+.logo {
+  width: 100px;
+  float: left;
+  padding-left: 3em;
   border-right: none;
 }
 
@@ -112,6 +115,7 @@ table {
   background-color: white;
   color: #798da3;
   transition: 0.2s;
+  text-align: center;
 }
 
 .bt:hover {
@@ -132,11 +136,19 @@ table {
   padding-bottom: 1em;
 }
 
-.loginform {
+#loginform {
   float: left;
 }
 
-#signupbutton {
+.userProfile {
+  displa
+}
+
+.fa {
+  color: #3b4754;
+}
+
+.navBt {
   float: right;
   margin-right: 3em;
   vertical-align: middle;
@@ -145,9 +157,6 @@ table {
 th {
   color: #798da3;
   border-right: 2px solid #798da3;
-  line-height: 10px;
-  letter-spacing: 0.1em;
-  font-family: "Roboto", sans-serif;
 }
 
 .overlay {
@@ -165,44 +174,6 @@ th {
 .hidden {
   visibility: hidden;
   opacity: 0;
-}
-
-#signupemail {
-  color: black;
-  font-size: 15px;
-  border-color: solid #798da3;
-  width: 20em;
-  padding-left: 5px;
-  margin-bottom: 1em;
-  border-radius: 0.5em;
-  font-family: "Roboto", sans-serif;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-.signuppass {
-  color: black;
-  font-size: 15px;
-  border-color: solid #798da3;
-  width: 20em;
-  padding-left: 5px;
-  margin-bottom: 1em;
-  border-radius: 0.5em;
-  font-family: "Roboto", sans-serif;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.signupconfirmpass {
-  color: black;
-  font-size: 15px;
-  border-color: solid #798da3;
-  width: 20em;
-  padding-left: 5px;
-  margin-bottom: 0.5em;
-  border-radius: 0.5em;
-  font-family: "Roboto", sans-serif;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .signUpError {
