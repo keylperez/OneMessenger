@@ -31,7 +31,7 @@ const login = document.querySelector("#login");
 const loginEmail = document.querySelector("#loginemail");
 const loginPass = document.querySelector("#loginpass");
 const loginButton = document.querySelector("#login");
-
+gi
 const signUpButtton = document.querySelector("#submitnewacc");
 const signUpEmail = document.querySelector("#signupemail");
 const signUpPass = document.querySelector("#signuppass");
