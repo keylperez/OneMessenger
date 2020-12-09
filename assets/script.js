@@ -142,6 +142,8 @@ loginButton.addEventListener("click", function (e) {
   if (accntLog && accntLog.password === loginPass.value) {
     loginEmail.value = loginPass.value = "";
     loginPass.blur();
+    document.getElementById('start').style.display='none';
+    document.getElementById('setupacc').style.display='block';
     console.log("login");
   }
 });

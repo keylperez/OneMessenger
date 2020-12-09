@@ -9,7 +9,7 @@
     <script defer src="assets/script.js"></script>
   </head>
   <body>
-    <div id="setupacc" style="width: 100%;">
+    <div id="setupacc" style="width: 100%; display: none;">
       <nav>
         <table>
           <thead class="nav_head">
@@ -84,7 +84,7 @@
         <a href="main.html" id="accSubmit"><button class="bt">Save</button></a>
       </div>
     </div>
-    <div id="start" class="hidden">
+    <div id="start">
       <header>
         <nav>
           <table>
@@ -96,7 +96,7 @@
                 <a href="aboutus.html" class="nav_headings" id="aboutUs">About Us</a>
               </th>
               <th>
-                <a href="settings.html" class="nav_headings" id="settings">Settings</a>
+                <a href="#" class="nav_headings" id="settings">Settings</a>
               </th>
               <th>
                 <a href="support.html" class="nav_headings" id="support">Support</a>
@@ -119,11 +119,11 @@
         <div>
           <form id="loginform" action="">
               <span class="entypo-user inputUserIcon" style="font-size: 20px">
-                <i class="fa fa-userL"></i>
+                <i class="fa fa-user"></i>
                 <input type="email" id="loginemail" class="inputbox" name="loginemail" placeholder="Email" autocomplete="true" maxlength="999" spellcheck="false"/><br>
               </span>
               <span class="entypo-key inputPassIcon" style="font-size: large">
-                <i class="fa fa-keyL"></i>
+                <i class="fa fa-key"></i>
                 <input type="password" id="loginpass" class="inputbox" autocomplete="true" name="loginpass" placeholder="Password"/><br>
               </span>
             <input type="submit" id="login" class="bt" value="Log-in"/>
