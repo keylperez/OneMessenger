@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "discord.detailsEditing": "Editing {dirname}",
+    "discord.workspaceElapsedTime": true
 }
