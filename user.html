@@ -38,32 +38,53 @@
         </table>
       </nav>
       <hr>
-      <div id="settingsBox">
-        <div id="sbTop">
-          <h2 id="settingsHeader">Settings</h2>
+      <div class="settingsBox">
+        <div class="sbTop">
+          <h2 class="settingsHeader">Settings</h2>
         </div>
-        <div id="sideNav">
+        <div class="sideNav">
           <div style="padding-top: 1em;">
-            <div id="search-container">
-            <span><i class="fas fa-search"></i></span>
-            <input type="text" name="settingssearch" id="settingsSearch" class="searchBox" placeholder="Search"/>
+            <div class="search-container">
+              <span><i class="fas fa-search"></i></span>
+              <input type="text" name="settingssearch" id="settingsSearch" class="searchBox" placeholder="Search"/>
+            </div>
           </div>
-          </div>
-          <div id="navSettings">
-              <h2><a href="user.html" class="linkNormal">User</a></h2>
-              <h2><a href="connections.html" class="linkNormal">Connections</a></h2>
-              <h2><a href="notifications.html" class="linkNormal">Notifications</a></h2>
-              <h2><a href="text&images.html" class="linkNormal">Text & Images</a></h2>
-              <h2><a href="theme.html" class="linkNormal">Theme</a></h2>
-              <h2><a href="language.html" class="linkNormal">Language</a></h2>
+          <div class="navSettings">
+              <h2 class="settingsSelected"><a href="user.html" class="linkNormal">User</a></h2>
+              <h2 class="settingsSelect"><a href="connections.html" class="linkNormal">Connections</a></h2>
+              <h2 class="settingsSelect"><a href="notifications.html" class="linkNormal">Notifications</a></h2>
+              <h2 class="settingsSelect"><a href="text&images.html" class="linkNormal">Text & Images</a></h2>
+              <h2 class="settingsSelect"><a href="theme.html" class="linkNormal">Theme</a></h2>
+              <h2 class="settingsSelect"><a href="language.html" class="linkNormal">Language</a></h2>
           </div>
         </div>
-        <div id="userSettings">
-            <h1>test</h1>
+        <div class="settingsContent">
+          <div id="userSettings">
+            <div class="avatar-wrapper">
+              <img src="" class="profile-pic">
+              <div class="upload-button">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <!-- <i class="fas fa-user-edit" style="font-size: 100px; cursor: pointer;"></i><br> -->
+              </div>
+              <input type="file" name="profileUser" id="setttingsUserIcon" class="file-upload" accept="image/*"/>
+            </div>
+            <form action="" style="margin-top: 2em;">
+              <input type="text" name="Username" id="username" class="inputbox" placeholder="Username"><br>
+              <input type="text" name="Biography" id="biography" class="inputbox" placeholder="Bio"><br>
+              <input type="text" name="New Password" id="newPassword" class="inputbox" placeholder="New Password"><br>
+              <input type="text" name="Confirm New Password" id="newPasswordConfirm" class="inputbox" placeholder="Confirm New Password"><br>
+              <input type="text" name="Phone Nubmer" id="phoneNo" class="inputbox" placeholder="Phone Number"><br>
+              <select name="Sex" id="genderSelect" class="inputbox" style="width: 30.8em;">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select><br>
+              <input type="text" name="Location" id="location" class="inputbox" placeholder="Location"><br>
+              <input type="date" name="Birthdate" id="bDay" class="inputbox"><br>
+              <a href="main.html"></a><input type="submit" value="Save" id="saveChanges" class="inputbox" style="cursor: pointer">
+            </form>
+          </div>
         </div>
       </div>
-      <ul>
-
-      </ul>
 </body>
 </html>
