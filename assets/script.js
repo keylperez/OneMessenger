@@ -48,7 +48,7 @@ const validateEmail = function (email) {
 
 const removeHiddenSU = function () {
   overlay.classList.remove("hidden");
-modal.classList.remove("hidden");
+  modal.classList.remove("hidden");
 };
 
 const addHiddenSU = function () {
@@ -81,11 +81,11 @@ const hoverNav = function (e) {
 
 const displayMessage = function (message) {
   const errorSucc = message === "Success" ? "signUpSuccess" : "signUpError";
-  if (messageOutput) messageOutput.remove();
-  messageOutput = document.createElement("div");
-  messageOutput.classList.add(errorSucc);
-  messageOutput.append(message);
-  signUpButtton.before(messageOutput);
+
+  if (document.getElementById("notifMessage"))
+    document.getElementById("notifMessage").remove();
+  messageOutput = `<div id='notifMessage'class="${errorSucc}">${message}</div>`;
+  signUpButtton.insertAdjacentHTML("beforebegin", messageOutput);
 };
 
 const checkUserCredentials = function (e) {
@@ -142,8 +142,8 @@ loginButton.addEventListener("click", function (e) {
   if (accntLog && accntLog.password === loginPass.value) {
     loginEmail.value = loginPass.value = "";
     loginPass.blur();
-    document.getElementById('start').style.display='none';
-    document.getElementById('setupacc').style.display='block';
+    document.getElementById("start").style.display = "none";
+    document.getElementById("setupacc").style.display = "block";
     console.log("login");
   }
 });
