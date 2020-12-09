@@ -5,12 +5,84 @@
   background-color: rgba(75, 186, 238, 0.5);
   border-radius: 15px;
   border: 3px solid #798da39a;
+  overflow: hidden;
 }
 
 #sbTop {
   width: 100%;
   height: 5em;
   background-color: #adc9e79a;
-  border: 3px solid #798da39a;
+  border-bottom: 3px solid #798da39a;
   border-radius: 11.9px 11.9px 0px 0px;
+}
+
+#settingsHeader {
+  margin: 0%;
+  padding-top: 1em;
+  text-align: center;
+}
+
+#sideNav {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  margin-left: 1em;
+  border-right: 3px solid #798da39a;
+}
+
+#settingsSearch {
+  font-size: 15px;
+  margin: 0 0 0 0.5em;
+  outline: 0px;
+  width: 75%;
+  height: 100%;
+  padding: 0px;
+  border: 0px;
+  position: relative;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+#search-container {
+  width: 8em;
+  height: 1em;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #798da39a;
+  border-radius: 3em;
+  margin: 0em 1em 1em 0em;
+  padding: 0.5em 0em 0.5em 0.5em;
+  background-color: white;
+  color: #798da3;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+#search-container:hover {
+  width: 85%;
+}
+
+#settingsearch:hover {
+  width: 100%;
+}
+
+.fa-search {
+  font-size: 20px;
+  float: left;
+  cursor: pointer;
+  display: inline;
+}
+
+#navSettings {
+  padding-right: 3em;
+}
+
+.linkNormal {
+  color: rgb(20, 71, 95);
+  text-decoration: none;
 }

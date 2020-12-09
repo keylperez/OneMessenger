@@ -11,6 +11,14 @@ body {
   margin: 0px;
 }
 
+input {
+  outline: 0px;
+}
+
+button {
+  outline: 0px;
+}
+
 .headers {
   float: left;
   padding-left: 0px;
