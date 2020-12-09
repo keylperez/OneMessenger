@@ -116,10 +116,6 @@ h3 {
   color: rgb(24, 102, 24);
 }
 
-.topnav {
-  overflow: hidden;
-}
-
 .container {
   width: 100%;
   display: inline-table;
@@ -187,10 +183,4 @@ h3 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-.linkset {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: #798da3;
 }
