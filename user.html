@@ -61,12 +61,10 @@
         <div class="settingsContent">
           <div id="userSettings">
             <div class="avatar-wrapper">
-              <img src="" class="profile-pic">
-              <div class="upload-button">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <!-- <i class="fas fa-user-edit" style="font-size: 100px; cursor: pointer;"></i><br> -->
-              </div>
-              <input type="file" name="profileUser" id="setttingsUserIcon" class="file-upload" accept="image/*"/>
+              <img id="output" width="200" src=""/>
+              <input type="file"  accept="image/*" name="image" id="file"  onchange="uploadAvatar(event)" style="display: none;">
+              <label for="file" id="icon" style="cursor: pointer;"><i class="fa fa-user-circle" style="font-size: 200px;"></i></label>
+              
             </div>
             <form action="" style="margin-top: 2em;">
               <input type="text" name="Username" id="username" class="inputbox" placeholder="Username"><br>
