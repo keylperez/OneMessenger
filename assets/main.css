@@ -10,3 +10,164 @@
   max-width: 100%;
   border-radius: 10%;
 }
+
+.navBt {
+  margin-top: 2em;
+}
+
+.trNav {
+  display: inline;
+  position: unset;
+  width: 10em;
+  height: auto;
+  margin: 20em 20em 10em 0em;
+}
+
+#messageBox {
+  margin: 2em 3em;
+}
+
+#leftNav {
+  float: left;
+  width: 20em;
+  height: 45em;
+  padding: 1em 1em;
+  border: 2px solid #798da3;
+  border-radius: 30px;
+  overflow: auto;
+}
+
+.messageInboxes {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0.5em;
+  padding: 4px;
+  cursor: pointer;
+}
+
+#messageSearchBox {
+  border: 2px solid #798da3;
+  padding: 0.2em 0.2em;
+  border-radius: 2em;
+  background-color: white;
+}
+
+#messageSearch {
+  margin: 0px 5px 5px 5px;
+  border: none;
+  padding: 0.5em 0.5em;
+  width: 87%;
+  font-size: 15px;
+}
+
+.chatboxContainer {
+  display: block;
+  margin: 2em 1em 2em 1em;
+  overflow: hidden;
+  border-bottom: 1px solid #798da3;
+}
+
+.chatboxContainer:hover {
+  background-color: #9cb6d1;
+}
+
+.chatboxContainer:after {
+  background-color: #9cb6d1;
+}
+
+.chatboxContainer:active:after {
+  background-color: #9cb6d1;
+}
+
+.chatPicContainer {
+  display: inline-block;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+}
+
+.chatPic {
+  width: 100%;
+  border-radius: 4em;
+}
+
+.messagePreview {
+  display: inline-block;
+  width: 13em;
+  margin-top: 0.5em;
+}
+
+.chatName {
+  display: inherit;
+  font-size: 20px;
+}
+
+.chatPreview {
+  padding-left: 4px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inherit;
+}
+
+.fas {
+  margin-top: 6px;
+  margin-left: 5px;
+  font-size: 20px;
+  float: left;
+  display: inline;
+  cursor: text;
+}
+
+p {
+  margin: 0.2em 0.5em;
+}
+
+#messageContent {
+  border: 2px solid #798da3;
+  border-radius: 40px;
+  width: 77%;
+  height: 45em;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.fa-user-circle {
+  font-size: 40px;
+}
+
+.messages {
+  margin-top: 0em;
+  margin-left: 0.5em;
+  border: 2px solid #798da3;
+  border-radius: 12px;
+  padding: 0.5em;
+  font-size: 20px;
+  max-width: 20em;
+  white-space: normal;
+  vertical-align: bottom;
+}
+
+#messageBG {
+  margin: 1em;
+}
+
+.messageContainer {
+  margin: 0.5em 0em;
+  width: 100%;
+}
+
+#messageBox {
+  position: absolute;
+  bottom: 0%;
+}
